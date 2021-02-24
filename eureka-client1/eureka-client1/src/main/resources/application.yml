@@ -1,0 +1,9 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: eureka-client1
+  cloud:
+    config:
+      uri: http://localhost:8888
