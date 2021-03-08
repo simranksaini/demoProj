@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.3</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.springboot</groupId>
+    <artifactId>eureka-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>eureka-demo</name>
+    <description>Demo project for Spring Cloud</description>
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>2020.0.1</spring-cloud.version>
+    </properties>
+    <!-- Modules -->
+    <modules>
+        <module>eureka-server/eureka-server</module>
+        <module>eureka-client1/eureka-client1</module>
+        <module>cloud-config-server-1/cloud-config-server-1</module>
+    </modules>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -5,5 +5,6 @@
     <file url="file://$PROJECT_DIR$/cloud-config-server-1/cloud-config-server-1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client1/eureka-client1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client1/eureka-client1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/eureka-server/src/main/java" charset="UTF-8" />
   </component>
 </project>

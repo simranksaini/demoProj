@@ -9,67 +9,42 @@ spring:
       server:
         git:
           uri: https://github.com/ibinsigma/springcloud-config-repository.git
-#
-#          ignore-local-ssh-settings: true
-#          strict-host-key-checking: false
           search-paths:
             - configuration/{application}/
             - configuration/
-#          private-key: |
-#            -----BEGIN RSA PRIVATE KEY-----
-#            MIIJKAIBAAKCAgEAn9g3/x03Vyy0fThPq/xDaLwePppIMad2tBxG5Lmvws97cg4r
-#            oGNlFnnCpx/uIwcSzK89l9UiWelYkieM3u2RsgC/eAEU5QiJkrxDj6sOcYO2XmKZ
-#            B77wcIIbGasCrU4SMliNiD/hQzCurXAKNy6XAdKMZPRNdLUBgwJncES8YQyZMT1R
-#            mbBaqKUf74NsmBxuWW6xlInb2W8vfDHYHRB95dw3vZpEeOgYnK7eikMnYY9cmUKY
-#            5FAxlHS2bGCgyP2w41d2t/94GU/gJ6oE1iEYb/s6tLe7SnzW84Vvd5voazlIXLVj
-#            vV72+MR21J/7rjiMVQbK+NbCcPQFnnmY5XuTKVCgTU6lN77JpKvOwaKAM4Q9U3hT
-#            UMpiSkt+qMd5lsgzRo0GXyjjCXkKxW791QRH2ijazMNYqBh673LT6nw5/cFzV6JH
-#            WJ/xpe662Scsde8k8YQOgTOExdLb/XiqM9sC09fFp3TJ6eAoMm6cjSw+kY5fzRtX
-#            fMxVkWnIwEl4OqKZDAelTBtEED03OcusSeikX0L2j3trau3cbqPyMb0J92TFV8V6
-#            t4tKB6px1MwHaBmdW6eSns5r6or8lJvYT8erl6lb+eWIFZV6bSKhL7yTNgGO9IlH
-#            8RL+XSV0CL4728CDUi9B8vutN/oSYARPIws58u8axSt5IfC4bsKczAypqLkCAwEA
-#            AQKCAgAywqslrNWCLYQzr8o9R6Lwg6znHH+IpTGhCMnKoN0b9F+zXKSmDmpvtMMH
-#            56/sF7b0oUHiEaETBHNIFp85vB/kczBan51PDmMB4h9iZGP10Gn9lzoZp50bXXXV
-#            tOTovD4zFsP7XK3gdHlEQqw70ePKhF5pQNvIECMmw4CtumZIO4P6iwp6z/I6VBXM
-#            LeQyefThGbHzBcR3TEO8IOgMcsxITqK052SPMMWAHFg3eBPte2VgljGPb5gPGPFF
-#            gXoN2eJuj7v3un0dLKx2bBuVFHV6OkHuWdp0USjBtMItLamlQ0+jgUbnQF0Vqu5B
-#            n3yBWxvVdI7IbwrYa+XM6biQR6n3mDeewWSVObfoB9upEn7qrwBKC0LYnF0KyxmC
-#            rXnADHX7/TwLAxtqCVIth2E+J/T3gaiLTP2jUsq9uz5WfSGpEhgLB9iYncwvYudW
-#            ZZtr9u25AuY3PlVWjdXXORmL3Pp7zju9DMMm4VePZmtEBzfalQBQEfgJhPT3ilcS
-#            etnUEiLGHx1YMev++RMNjlG/mehC6EFlSzeRgIJKVhjRe21D6Z40rVX0uRi8QYuh
-#            5E3p9bAbPw/mniXxVTGCWRhJMksRdr3ptTdkmeZHRBPFqBLuRE6qrjrWhzRDy9XE
-#            VOIxoxsjMSS8qggCIf84HFMnYQU+IYkkj9mhYYpDbMPBwswwcQKCAQEA0u0gPzX4
-#            q4473+rX6BRppZyNBqEh33H7ZHLFpajsKzBn2g7ggzVATiK+qbDCQTtEA5GfTrva
-#            BfYGLsznh4bxmxWYeipHxCEBWyoYtrY0NSPcQb/ppcHOYEPLobzi3FL8ppycSi67
-#            5VMmr1peNWosQwVDvnTe57GBd/QJOAI/n8OTqayW2smOZs7n3mm/QHWFxYyN4uZP
-#            3OOufTut25pTLb4gKVpDj4vZSffwNYRVnkBdjz+kvN7zldz2Jo022iHNuv6IneGb
-#            tPoc5O9CmiiFiUqC7+1V+i5R0fMNEx2YDYlvEL6v+NhLQ2eBrw4o0AGRtS6lBbQP
-#            SG8p8I7ru5KA9wKCAQEAwgCiGa1CJYV8lCXVLy2uPlbcPw5KrXbvsbUShsXr7UjU
-#            hhgDs2z44obqQ2wAsJvrbidptaWCipjIUy5NjZ5a+aCl6s/ck4bfupk/a0X4SaeJ
-#            EuKqMdgpcopbFY1cIfw+BCVQJFrgYa8zO3Y1oAnCFFvmq/O+2LQMBFkbz5/Q2FZT
-#            +7iOfUpTuMNDS/uqpIsxQrZAOQ6E5lDWSZubTEUW62DJWlwo0FQVjQFz0R1LN5YO
-#            SvbAOwV3uxQ1rJ0W7ZWNGD5wgNvvzJaJ4JEWRP+xzsDwL4zVCD8OnxvSKIEIJfPb
-#            MbPZ+qfnB9WypZxAZEvsb1DdwuUv2Da1KVlrhzBnzwKCAQAaezLlPL1vrHfP8QgS
-#            Vx28cR8zid9a0lChl9dAqSidc4JWWi/NyU29gZc2br60ueAcIphBpkwFG5JDJe6b
-#            kVGcCuYN0GkaMpqc+3gG2HFNiqcIijOnX+GtLFXQhIpm5vRZZqgomB12+S2OLmZN
-#            hnrwHyUWME4cAKkkijruETozsLZFQyndZhi+x5NM1THxwc99sdvOdOPp85vglTGK
-#            tKFkyM344yBAUWqCYuKBlY+6QpJ8fZ0NKWCjnA47YNdWI5BUvcghKkYGPrCJ/Y/7
-#            EsNRLU2rGb0Fn/MdzMoDcF+6s1qCW650K5OnbsNVWw28r7W/bY/CW4zfpzU4wnjO
-#            H+KZAoIBAQCUWOubetMz4ekrV+q2ktXEsaLlTMZp8qLDXtT13e7UmXZ5u29JCrEe
-#            d1A3kiTM582Vg+nfjtpNpRq6EJQZENg8Pk3hSmU/Ikl+ZKUMIIsFt2in2k+Ood6/
-#            yXBxAJFNI5dAkE/CHQOrbs9cTr4ezJdt/gBbyJ1NFBCEWqdbkreeVhUOTUgYInf2
-#            tsmFFsKb5BwdCUP+3U1e2L2jt6t/HO2zu2T9Ba/n7gQ0uMGZTC8yKDpxtFG2UC4I
-#            DiIlBlJ8BnnH6icZQhUSeqKf6BIBXQzYLsz7b1OPZLiHjjyb4F8ctmYMkZzDgRS2
-#            9wAOh3btuujnDg0ldR+q09qf7dK9o5QdAoIBAHJYCwT2pniuixVcEOx9ZwcRVO78
-#            KiAPauRU1G45UUZgyYOdgTgVyvNR/bAYhwxXNaMTPhjreh3E10kHAMtHVrWI18Qk
-#            KcQOqJzuADYawGw1TzItL/6OmLeZQJ16ddIeHi8NmnYuW3RU1f9c54kBRSG7eQra
-#            D6pCitiOmvIl6x47jpr/2pjEs1gcfwMrXeRMZKoA+RG8cVHfBy4whA39KzSz7oYV
-#            UA1qLSSf0z6S6QiJpM7yHEVwkftY8FkX8jK/N5JfJNpC24Ef02gOvw9Q6ufukXsc
-#            buKXg3WAJzLGnUyf8C5F4Jjn+NrIb17aWvVD6bgyoWZfu69xGgcFZTV606E=
-#            -----END RSA PRIVATE KEY-----
 
 eureka:
   client:
     registry-fetch-interval-seconds: 5
+    registerWithEureka: true
+    fetchRegistry: true
     service-url:
       defaultZone: http://localhost:8700/eureka/
+
+#spring:
+#  application:
+#    name: cloud-config-server
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/ibinsigma/springcloud-config-repository.git
+
+
+#eureka:
+#  client:
+#    registry-fetch-interval-seconds: 5
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: https://demo-spring-cloud-app-springclouddemo.azuremicroservices.io/eureka
+#  instance:
+#    hostname: demo-spring-cloud-app-springclouddemo.azuremicroservices.io
+#    secure-port-enabled: true
+#    nonsecure-port-enabled: false
+#    instance-id: ${eureka.instance.hostname}:${spring.application.name}:443
+#    status-page-url: https://${eureka.hostname}:443/actuator/info
+#    health-check-url: https://${eureka.hostname}:443/actuator/health
+#    secure-health-check-url: https://${eureka.hostname}:443/actuator/health
+#    non-secure-port: 80
+#    secure-port: 443
